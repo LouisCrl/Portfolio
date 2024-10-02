@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- En-tête -->
+    <header class="bg-blue-900 text-white p-6">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold">Mon Portfolio</h1>
+            <nav class="mt-4">
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:text-gray-300">À propos</a></li>
+                    <li><a href="#skills" class="hover:text-gray-300">Compétences</a></li>
+                    <li><a href="#projects" class="hover:text-gray-300">Projets</a></li>
+                    <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section À propos -->
+    <section id="about" class="py-12 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">À propos de moi</h2>
+            <p class="text-lg text-gray-600">
+                Je suis un développeur web passionné par la création d'expériences numériques interactives et dynamiques. Avec plusieurs années d'expérience, j'ai travaillé sur de nombreux projets qui m'ont permis de perfectionner mes compétences en développement front-end et back-end.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="py-12 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Compétences</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">HTML & CSS</h3>
+                    <p class="text-gray-600">Création de pages web structurées et réactives avec les dernières normes.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">JavaScript</h3>
+                    <p class="text-gray-600">Développement de fonctionnalités interactives et dynamiques.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Frameworks</h3>
+                    <p class="text-gray-600">Expérience avec React, Vue.js et Tailwind CSS pour des interfaces modernes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="py-12 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Projets récents</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Projet 1 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/150" alt="Projet 1" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Projet 1</h3>
+                    <p class="text-gray-600">Description du projet 1. Une application web moderne et interactive.</p>
+                </div>
+                <!-- Projet 2 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/150" alt="Projet 2" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Projet 2</h3>
+                    <p class="text-gray-600">Description du projet 2. Un site e-commerce avec des fonctionnalités avancées.</p>
+                </div>
+                <!-- Projet 3 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <img src="https://via.placeholder.com/150" alt="Projet 3" class="mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Projet 3</h3>
+                    <p class="text-gray-600">Description du projet 3. Une plateforme de blog avec un design minimaliste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-12 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Contactez-moi</h2>
+            <p class="text-lg text-gray-600 mb-6">Vous souhaitez discuter d'un projet ou d'une collaboration ? N'hésitez pas à me contacter.</p>
+            <a href="mailto:email@example.com" class="bg-blue-900 text-white py-3 px-6 rounded-lg hover:bg-blue-700">Envoyez-moi un email</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white p-6 mt-12 text-center">
+        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
