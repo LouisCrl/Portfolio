@@ -1,4 +1,5 @@
-body {
+header {
+    height: 100%;
     background-image: url('wallpaperflare.com_wallpaper.jpg'); /* URL de l'image */
     background-size: cover; /* Ajuste l'image pour couvrir tout l'écran */
     background-position: center; /* Centre l'image */
