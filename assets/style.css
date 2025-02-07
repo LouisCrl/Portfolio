@@ -58,28 +58,34 @@ main .titre{
 
 main .about {
     background-color: azure;
+    height: 30%;
 }
 
 main .skills {
     background-color: #000;
     color: azure;
+    height: 30%;
 }
 
 main .experiences {
     background-color: azure;
+    height: 30%;
 }
 
 main .projects {
     background-color: #000;
     color: azure;
+    height: 30%;
 }
 
 main .contact {
     background-color: azure;
+    height: 30%;
 }
 
 footer{
     background-color: #000;
     color: azure;
     position: relative;
+    padding: 15px;
 }
