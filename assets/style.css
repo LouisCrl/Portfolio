@@ -6,9 +6,10 @@
 
 body {
     background-color: #000;
-    background-image: url('background_cpp-modified.jpg');
+    background-image: url('background_cpp.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -47,6 +48,17 @@ header nav a:hover{
     border-radius: 5px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main div {
+    margin: 10px;
+    border: 2px;
+    border-radius: 20px;
+}
+
 main .titre{
     height: 100vh;
     display: flex;
@@ -54,33 +66,131 @@ main .titre{
     justify-content: center;
     color: azure;
     text-transform: uppercase;
+    font-size: xx-large;
 }
 
 main .about {
     background-color: azure;
-    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 10%;
+}
+
+main .about #moi img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+main .about #about {
+    width: 40%;
+}
+
+main .about #about h2 {
+    margin-bottom: 10px;
+}
+
+main .about #about p {
+    margin-bottom: 10px;
 }
 
 main .skills {
     background-color: #000;
     color: azure;
-    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0%;
+    padding: 40px;
+}
+
+main .skills #myskills {
+    width: 30%;
+    margin-left: 20%;
+}
+
+main .skills #list_skills {
+    width: 40%;
+    padding-left: 70px;
+    margin-right: 20%;
+}
+
+main .skills #list_skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #0c8;
+}
+
+main .skills #list_skills ul li {
+    flex: 1 1 calc(33.33% - 10px);
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
 }
 
 main .experiences {
     background-color: azure;
-    height: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    padding: 15px;
+}
+
+main .experiences table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+main .experiences table th {
+    background-color: #000;
+    color: azure;
+    font-size: 20px;
+}
+
+main .experiences table td {
+    font-size: 16px;
+    text-align: left;
+}
+
+main .experiences table th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+main .experiences table .c-1 {
+    width: 20%;
+}
+
+main .experiences table .c-2 {
+    width: 50%;
+}
+
+main .experiences table .c-3 {
+    width: 15%;
+}
+
+main .experiences table .c-4 {
+    width: 15%;
 }
 
 main .projects {
     background-color: #000;
     color: azure;
-    height: 30%;
 }
 
 main .contact {
     background-color: azure;
-    height: 30%;
 }
 
 footer{
