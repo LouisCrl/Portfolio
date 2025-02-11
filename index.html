@@ -1,100 +1,116 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <!--<script src="https://cdn.tailwindcss.com"></script>-->
+    <title>Acceuil</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
-<body class="bg-gray-100 text-gray-800">
-
-    <!-- En-tête -->
-    <header class="bg-blue-900 text-white p-6">
-        <div class="container mx-auto">
-            <h1 class="text-4xl font-bold">Mon Portfolio</h1>
-            <nav class="mt-4">
-                <ul class="flex space-x-4">
-                    <li><a href="#about" class="hover:text-gray-300">À propos</a></li>
-                    <li><a href="#skills" class="hover:text-gray-300">Compétences</a></li>
-                    <li><a href="#projects" class="hover:text-gray-300">Projets</a></li>
-                    <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+<body>
+    <header>
+        <p>Carlu Louis</p>
+        <nav>
+            <a href="#aboutme">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-
-    <!-- Section À propos -->
-    <section id="about" class="py-12 bg-white">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-4">À propos de moi</h2>
-            <p class="text-lg text-gray-600">
-                Je suis un développeur web passionné par la création d'expériences numériques interactives et dynamiques. Avec plusieurs années d'expérience, j'ai travaillé sur de nombreux projets qui m'ont permis de perfectionner mes compétences en développement front-end et back-end.
-            </p>
+    
+    <main>
+        <div class="titre">
+            <h1>My Portfolio</h1>
         </div>
-    </section>
 
-    <!-- Section Compétences -->
-    <section id="skills" class="py-12 bg-gray-100">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-4">Compétences</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">HTML & CSS</h3>
-                    <p class="text-gray-600">Création de pages web structurées et réactives avec les dernières normes.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">JavaScript</h3>
-                    <p class="text-gray-600">Développement de fonctionnalités interactives et dynamiques.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-2">Frameworks</h3>
-                    <p class="text-gray-600">Expérience avec React, Vue.js et Tailwind CSS pour des interfaces modernes.</p>
-                </div>
+        <div class="about" id="aboutme">
+            <div id="moi">
+                <img src="assets/moi.jpg" alt="moi">
+            </div>
+            <div id="about">
+                <h2>About me</h2>
+                <p>I'm Carlu Louis, curently a French CESI student who just loves computers. I really love programming and playing video-games. And I love e-sport as much.</p>
+                <p>Out of classes I mostly play video-games, my favorites are: Supervive, Apex Legends and Windblown.</p>
+                <p>Like it said earlier, I love programming too, even out of classes where I do some littles personnal projects.</p>
+                <p>And my last passion is to watch e-sport and follow e-sport scene of different games like Apex Legends, Overwatch or League of Legends.</p>
+                </ul>
             </div>
         </div>
-    </section>
 
-    <!-- Section Projets -->
-    <section id="projects" class="py-12 bg-white">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-4">Projets récents</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Projet 1 -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                    <img src="https://via.placeholder.com/150" alt="Projet 1" class="mb-4 rounded-lg">
-                    <h3 class="text-xl font-semibold mb-2">Projet 1</h3>
-                    <p class="text-gray-600">Description du projet 1. Une application web moderne et interactive.</p>
-                </div>
-                <!-- Projet 2 -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                    <img src="https://via.placeholder.com/150" alt="Projet 2" class="mb-4 rounded-lg">
-                    <h3 class="text-xl font-semibold mb-2">Projet 2</h3>
-                    <p class="text-gray-600">Description du projet 2. Un site e-commerce avec des fonctionnalités avancées.</p>
-                </div>
-                <!-- Projet 3 -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                    <img src="https://via.placeholder.com/150" alt="Projet 3" class="mb-4 rounded-lg">
-                    <h3 class="text-xl font-semibold mb-2">Projet 3</h3>
-                    <p class="text-gray-600">Description du projet 3. Une plateforme de blog avec un design minimaliste.</p>
-                </div>
+        <div class="skills" id="skills">
+            <div id="myskills">
+                <h2>Skills</h2>
+                <p>In my school years, I've developped some network and programmation skills and here they are:</p>
+            </div>
+            <div id="list_skills">
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
             </div>
         </div>
-    </section>
 
-    <!-- Section Contact -->
-    <section id="contact" class="py-12 bg-gray-100">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-4">Contactez-moi</h2>
-            <p class="text-lg text-gray-600 mb-6">Vous souhaitez discuter d'un projet ou d'une collaboration ? N'hésitez pas à me contacter.</p>
-            <a href="mailto:louis.carlu@viacesi.fr" class="bg-blue-900 text-white py-3 px-6 rounded-lg hover:bg-blue-700">Envoyez-moi un email</a>
+        <div class="experiences" id="experiences">
+            <h2>Experiences</h2>
+            <table>
+                <tr>
+                    <th colspan="4">Formations</th>
+                </tr>
+                <tr>
+                    <td class="c-1">Pont-Audemer Jacque Prévert High School</td>
+                    <td class="c-2">General Baccalaureate speciality NSI and mathematics</td>
+                    <td class="c-3">Year 2022-2023</td>
+                    <td class="c-4">Good Mention</td>
+                </tr>
+                <tr>
+                    <td class="c-1">Rouen CESI</td>
+                    <td class="c-2">2nd year of preparatory class integrated</td>
+                    <td class="c-3">Year 2023-2024</td>
+                    <td class="c-4">Currently</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th colspan="4">Work Experience</th>
+                </tr>
+                <tr>
+                    <td>No work experiences in the IT domain for the moment</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th colspan="4">Others Experiences</th>
+                </tr>
+                <tr>
+                    <td class="c-1">Normandy</td>
+                    <td class="c-2">Trophées NSI</td>
+                    <td class="c-3">2023 Edition</td>
+                    <td class="c-4">Normandy Jury Prize</td>
+                </tr>
+                <tr>
+                    <td class="c-1">Online</td>
+                    <td class="c-2">Charitable stream with an e-sports association</td>
+                    <td class="c-3">Year 2022</td>
+                    <td class="c-4"></td>
+                </tr>
+            </table>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-blue-900 text-white p-6 mt-12 text-center">
-        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+        <div class="projects" id="projects">
+            <h2>Projects</h2>
+        </div>
+
+        <div class="contact" id="contact">
+            <h2>Contact</h2>
+        </div>
+    </main>
+
+    <footer>
+        <em>&copy; 2025 My Portfolio. All rights reserved.</em>
     </footer>
-
 </body>
 </html>
