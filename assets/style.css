@@ -10,38 +10,27 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 header {
     color: azure;
     position: fixed;
     width: 100%;
-    height: 70px;
-    background-color: #000;
+    height: 10vh;
+    background-color: #242038;
     display: flex;
     align-items: center;
-    padding: 15px
+    padding: 15px;
+    opacity: 0.8;
+    z-index: 1000;
 }
 
-header .nom a{
+header #name a{
     text-decoration: none;
     color: azure;
-    border-left: 2px solid azure;
-    border-right: 2px solid azure;
-    margin: -3px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-header .nom a:hover{
-    background-color: azure;
-    color: #000;
-    font-weight: bold;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 5px;
 }
 
 header nav {
@@ -60,7 +49,7 @@ header nav a{
 
 header nav a:hover{
     background-color: azure;
-    color: #000;
+    color: #333;
     font-weight: bold;
     padding: 5px;
     padding-left: 20px;
@@ -73,14 +62,19 @@ main {
     flex-direction: column;
 }
 
+main a {
+    text-decoration: none;
+}
+
 main div {
-    margin: 10px;
+    margin: 2px;
     border: 2px;
     border-radius: 10px;
+    opacity: 0.95;
 }
 
 main .titre{
-    height: 100vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,15 +84,16 @@ main .titre{
 }
 
 main .about {
-    background-color: azure;
+    background-color: #087E8B;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 40px;
     gap: 10%;
+    height: 50vh;
 }
 
-main .about #moi img {
+main .about #me img {
     width: 150px;
     height: auto;
     border-radius: 50%;
@@ -117,7 +112,7 @@ main .about #about p {
 }
 
 main .skills {
-    background-color: #000;
+    background-color: #05555E;
     color: azure;
     display: flex;
     align-items: center;
@@ -155,66 +150,112 @@ main .skills #list_skills ul li {
 }
 
 main .experiences {
-    background-color: azure;
+    background-color: #087E8B;
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
     height: auto;
     padding: 15px;
 }
 
-main .experiences table {
-    border: 2px solid black;
+main .experiences div {
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+}
+
+main .experiences div table {
+    border: 2px solid #9C2922;
     border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
 }
 
-main .experiences table th {
-    background-color: #000;
-    color: azure;
-    font-size: 20px;
+main .experiences div .table1 th, .table2 th, .table3 th {
+    background-color: #92140C;
+    height: 25px;
+    border: 2px solid black;
 }
 
-main .experiences table td {
-    font-size: 16px;
-    text-align: left;
-}
-
-main .experiences table th, td {
-    border: 1px solid black;
-    padding: 8px;
-}
-
-main .experiences table .c-1 {
-    width: 20%;
-}
-
-main .experiences table .c-2 {
-    width: 50%;
-}
-
-main .experiences table .c-3 {
-    width: 15%;
-}
-
-main .experiences table .c-4 {
-    width: 15%;
+main .experiences div .table1 td, .table2 td, .table3 td {
+    padding-right: 25px;
+    padding-left: 25px;
+    border: 2px solid black;
 }
 
 main .projects {
-    background-color: #000;
+    background-color: #05555E;
     color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+main .projects .my_projects{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+main .projects .project {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 300px;
+    margin: 20px;
+}
+
+.project .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+main .projects .project img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+
+/* Overlay blanc */
+.project .overlay {
+    position: absolute;
+    bottom: -100%;
+    left: -4px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: #000;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: bottom 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0.95;
+}
+
+.project:hover .overlay {
+    bottom: 0;
+}
+
+.project:hover img {
+    transform: scale(1.05);
+    filter: brightness(80%);
 }
 
 main .contact {
-    background-color: azure;
+    background-color: #087E8B;
 }
 
 footer{
-    background-color: #000;
+    background-color: #242038;
     color: azure;
     position: relative;
     padding: 15px;

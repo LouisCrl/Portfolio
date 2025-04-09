@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="#" id="nom">Carlu Louis</a>
+        <span id="name"><a href="index.html">Carlu Louis</a></span>
         <nav>
             <a href="#aboutme">About</a>
             <a href="#skills">Skills</a>
@@ -20,11 +23,11 @@
     
     <main>
         <div class="titre">
-            <h1>My Portfolio</h1>
+            <h1>WELCOME</h1>
         </div>
 
         <div class="about" id="aboutme">
-            <div id="moi">
+            <div id="me">
                 <img src="assets/moi.jpg" alt="moi">
             </div>
             <div id="about">
@@ -56,52 +59,111 @@
 
         <div class="experiences" id="experiences">
             <h2>Experiences</h2>
-            <table>
-                <tr>
-                    <th colspan="4">Formations</th>
-                </tr>
-                <tr>
-                    <td class="c-1">Pont-Audemer Jacque Prévert High School</td>
-                    <td class="c-2">General Baccalaureate speciality NSI and mathematics</td>
-                    <td class="c-3">Year 2022-2023</td>
-                    <td class="c-4">Good Mention</td>
-                </tr>
-                <tr>
-                    <td class="c-1">Rouen CESI</td>
-                    <td class="c-2">2nd year of preparatory class integrated</td>
-                    <td class="c-3">Year 2023-2024</td>
-                    <td class="c-4">Currently</td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th colspan="4">Work Experience</th>
-                </tr>
-                <tr>
-                    <td>No work experiences in the IT domain for the moment</td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th colspan="4">Others Experiences</th>
-                </tr>
-                <tr>
-                    <td class="c-1">Normandy</td>
-                    <td class="c-2">Trophées NSI</td>
-                    <td class="c-3">2023 Edition</td>
-                    <td class="c-4">Normandy Jury Prize</td>
-                </tr>
-                <tr>
-                    <td class="c-1">Online</td>
-                    <td class="c-2">Charitable stream with an e-sports association</td>
-                    <td class="c-3">Year 2022</td>
-                    <td class="c-4"></td>
-                </tr>
-            </table>
+            <div class="tables_form">
+                <div class="table1">
+                    <table>
+                        <tr>
+                            <th colspan="4">Formations</th>
+                        </tr>
+                        <tr>
+                            <td class="c-1">Pont-Audemer Jacque Prévert High School</td>
+                            <td class="c-2">General Baccalaureate speciality NSI and mathematics</td>
+                            <td class="c-3">Year 2022-2023</td>
+                            <td class="c-4">Good Mention</td>
+                        </tr>
+                        <tr>
+                            <td class="c-1">Rouen CESI</td>
+                            <td class="c-2">2nd year of preparatory class integrated</td>
+                            <td class="c-3">Year 2023-2024</td>
+                            <td class="c-4">Currently</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tables_exp">
+                <div class="table2">
+                    <table>
+                        <tr>
+                            <th colspan="4">Work Experience</th>
+                        </tr>
+                        <tr>
+                            <td>No work experiences in the IT domain for the moment</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="table3">
+                    <table>
+                        <tr>
+                            <th colspan="4">Others Experiences</th>
+                        </tr>
+                        <tr>
+                            <td class="c-1">Normandy</td>
+                            <td class="c-2">Trophées NSI</td>
+                            <td class="c-3">2023 Edition</td>
+                            <td class="c-4">Normandy Jury Prize</td>
+                        </tr>
+                        <tr>
+                            <td class="c-1">Online</td>
+                            <td class="c-2">Charitable stream with an e-sports association</td>
+                            <td class="c-3">Year 2022</td>
+                            <td class="c-4"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
 
         <div class="projects" id="projects">
             <h2>Projects</h2>
+            <div class="my_projects">
+                <div class="project">
+                    <a href="https://github.com/LouisCrl/Portfolio" target="_blank">
+                        <div class="image-container">
+                            <img src="assets/portfolio.png">
+                            <div class="overlay">
+                                <h3>My Portfolio</h3>
+                                <p>my portfolio</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/LouisCrl/Jeu_de_la_vie" target="_blank">
+                        <div class="image-container">
+                            <img src="assets/poo.png">
+                            <div class="overlay">
+                                <h3>Game Of Life</h3>
+                                <p>The game of life</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/CESI-Infos/Projet-Web-A2" target="_blank">
+                        <div class="image-container">
+                            <img src="assets/TheGoodPlan.png">
+                            <div class="overlay">
+                                <h3>TheGoodPlan</h3>
+                                <p>Web site</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/LouisCrl/Lemmings_New_World" target="_blank">
+                        <div class="image-container">
+                            <img src="assets/LemmingNewWorldArtwork.png">
+                            <div class="overlay">
+                                <h3>Lemmings New World</h3>
+                                <p>Game</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a href="https://github.com/LouisCrl" target="_blank">
+                <button type="button">Voir tout</button>
+            </a>            
         </div>
 
         <div class="contact" id="contact">
