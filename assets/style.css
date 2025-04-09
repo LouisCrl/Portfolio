@@ -225,6 +225,25 @@ main .projects .project {
     height: 100%;
 }
 
+.see-all-button {
+    background-color: #242038;
+    color: azure;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.see-all-button:hover {
+    background-color: azure;
+    color: #333;
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
 main .projects .project img {
     width: 100%;
     height: auto;
@@ -233,8 +252,6 @@ main .projects .project img {
     transition: transform 0.3s ease;
 }
 
-
-/* Overlay blanc */
 .project .overlay {
     position: absolute;
     bottom: -100%;
