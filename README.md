@@ -1,1 +1,1 @@
-https://louiscrl.github.io/Portfolio/index.html
+https://louiscrl.github.io/Portfolio/
