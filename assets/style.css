@@ -30,7 +30,7 @@ body {
 header {
     color: azure;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     background-color: #242038;
     display: flex;
@@ -80,7 +80,6 @@ main a {
 
 main div {
     margin: 2px;
-    border: 2px;
     border-radius: 10px;
     opacity: 0.95;
 }
@@ -157,8 +156,12 @@ main .skills #list_skills ul {
 main .skills #list_skills ul li {
     flex: 1 1 calc(33.33% - 10px);
     text-align: center;
-    font-size: x-large;
     padding: 10px;
+}
+
+main .skills #list_skills ul li img {
+    width: 65px;
+    height: auto;
 }
 
 main .experiences {
@@ -176,11 +179,19 @@ main .experiences {
 main .experiences div {
     display: flex;
     flex-direction: row;
-    height: 20vh;
+}
+
+main .experiences .tables_form, .tables_exp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
 }
 
 main .experiences div table {
-    border: 2px solid #9C2922;
     border-collapse: collapse;
 }
 
@@ -191,9 +202,14 @@ main .experiences div .table1 th, .table2 th, .table3 th {
 }
 
 main .experiences div .table1 td, .table2 td, .table3 td {
+    padding: 15px;
     padding-right: 25px;
     padding-left: 25px;
     border: 2px solid black;
+}
+
+main .experiences strong {
+    display: none;
 }
 
 main .projects {
@@ -209,6 +225,9 @@ main .projects .my_projects{
     display: flex;
     flex-direction: row;
     gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 main .projects .project {
@@ -281,6 +300,16 @@ main .projects .project img {
 
 main .contact {
     background-color: #087E8B;
+    text-align: center;
+    padding: 15px;
+}
+
+main .contact ul {
+    list-style-type: none;
+}
+
+main .contact #bot {
+    margin-bottom: 15px;
 }
 
 footer{
@@ -288,4 +317,118 @@ footer{
     color: azure;
     position: relative;
     padding: 15px;
+    width: 100vw;
+}
+
+@media (max-aspect-ratio: 4/3) {
+    header nav {
+        display: none;
+    }
+
+    main .titre {
+        font-size: 5vw;
+    }
+
+    main .about {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        overflow: auto;
+    }
+
+    main .about #about {
+        height: auto;
+        width: 75vw;
+        padding-bottom: 15px;
+    }
+
+    main .skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .skills #myskills {
+        width: 75vw;
+        margin-right: 20%;
+    }
+
+    main .skills #list_skills {
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 0px;
+        margin-left: 20%;
+    }
+
+    main .skills #list_skills ul li {
+        flex: 1 1 calc(33.33% - 10px);
+    }
+
+    main .experiences div {
+        flex-direction: column;
+        height: auto;
+    }
+
+    main .experiences table {
+        width: 90vw;
+        font-size: 14px;
+    }
+
+    main .experiences table tr {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    main .experiences table th {
+        display: block;
+        background-color: #92140C;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        padding-bottom: 20px;
+    }
+
+    main .experiences table td {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        border-top: 1px solid black;
+        text-align: center;
+    }
+
+
+    main .experiences strong {
+        display: inline;
+    }
+
+    main .projects .my_projects {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main .projects .project {
+        width: 45vw;
+        margin: 10px;
+    }
+
+    main .projects .project .overlay {
+        position: static;
+        opacity: 1;
+        bottom: 0;
+        height: auto;
+        background-color: transparent;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    main .projects .project .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .projects .project .overlay h3, p {
+        margin: 5px 0;
+    }
 }
